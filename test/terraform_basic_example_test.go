@@ -12,7 +12,7 @@ func TestTerraformResourceGroupExample(t *testing.T) {
 	// retryable errors in terraform testing.
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
 		// Set the path to the Terraform code that will be tested.
-		TerraformDir: "../examples",
+		TerraformDir: "../examples/simpleModuleDeployment",
 	})
 
 	// Clean up resources with "terraform destroy" at the end of the test.
