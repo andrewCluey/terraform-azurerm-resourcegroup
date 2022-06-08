@@ -1,18 +1,17 @@
 variable "tags" {
   description = "A map of tag values to add to the new Resource Group"
   type        = map(string)
-  default     = {environment = "DEV"}
+  default     = {}
 }
 
 variable "location" {
   description = "The Azure region to deploy the new Resource Group"
   type        = string
-  default     = "UK South"
+  default     = "uksouth"
 }
 
 variable "rg_name" {
-  description = "The name ot assign to the new Resource Group"
+  description = "The name to assign to the new Resource Group"
   type        = string
-  default     = "RG-TEST"
 }
 
